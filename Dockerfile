@@ -1,4 +1,5 @@
-FROM openjdk:21-ea-11-jdk-slim
+FROM eclipse-temurin:21-jre
+WORKDIR /app
+COPY target/bank.jar app.jar
 EXPOSE 8080
-ADD target/bank.jar bank.jar
-ENTRYPOINT ["java","-jar","/bank.jar"]
+ENTRYPOINT ["java","-jar","/app/app.jar"]
