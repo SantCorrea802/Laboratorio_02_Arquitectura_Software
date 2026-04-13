@@ -141,6 +141,7 @@
 			</plugin>
 
 		</plugins>
+		<finalName>bank</finalName>
 	</build>
 
 </project>
