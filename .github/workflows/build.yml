@@ -96,9 +96,10 @@ jobs:
           if-no-files-found: error
 
       - name: Build & push Docker image
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: mr-smithers-excellent/docker-build-push@v6
         with:
-          image: santcorrea802/lab2_bank
+          image: ${{ secrets.DOCKER_USERNAME }}/lab2_bank
           tags: latest
           registry: docker.io
           username: ${{ secrets.DOCKER_USERNAME }}
