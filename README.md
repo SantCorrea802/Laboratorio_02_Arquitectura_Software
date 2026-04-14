@@ -12,4 +12,4 @@
 # LABORATORIO 02 ARQUITECTURA DE SOFTWARE
 
 El front de este proyecto se encuentra en:
-[FRONT]([https://bank-front-juv5.onrender.com/create-customer](https://bank-front-juv5.onrender.com/))
+[FRONT](https://bank-front-juv5.onrender.com)
