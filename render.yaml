@@ -3,6 +3,7 @@ services:
     name: bank-app
     runtime: docker
     plan: free
+    rootDir: back
     envVars:
       - key: SPRING_DATASOURCE_URL
         sync: false
