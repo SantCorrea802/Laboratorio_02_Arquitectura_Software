@@ -1,6 +1,7 @@
 // Configuración de la API
 // Cambia esta URL según donde esté corriendo tu backend
-const API_BASE_URL = "http://localhost:8080/api";
+const API_BASE_URL =
+  import.meta.env.VITE_API_URL || "http://localhost:8080/api";
 
 export const api = {
   // Clientes
