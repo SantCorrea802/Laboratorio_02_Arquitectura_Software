@@ -13,3 +13,18 @@
 
 El front de este proyecto se encuentra en:
 [FRONT](https://bank-front-juv5.onrender.com)
+
+para probar el docker image de manera local haga:
+   ```bash
+
+docker pull santcorrea/lab2_bank:latest
+
+
+docker run --name bank_app -p 8080:8080 `
+  -e PORT=8080 `
+  -e SPRING_DATASOURCE_URL="jdbc:postgresql://host.docker.internal:5432/bank_lab01" `
+  -e SPRING_DATASOURCE_USERNAME=postgres `
+  -e SPRING_DATASOURCE_PASSWORD=TU_PASSWORD `
+  santcorrea/lab2_bank:latest
+
+   ```
